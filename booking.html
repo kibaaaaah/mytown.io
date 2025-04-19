@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Service | MyTown</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body id="booking-page">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">MyTown Services</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="navbar-nav ms-auto">
+                    <a class="nav-link" href="index.html">Home</a>
+                    <a class="nav-link" href="services.html">Services</a>
+                    <a class="nav-link active" href="#">Booking</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-5">
+        <div class="card mb-4">
+            <div class="card-body text-center">
+                <h1 class="card-title">Complete Your Booking</h1>
+                <p class="card-text lead">We're excited to serve you!</p>
+            </div>
+        </div>
+
+        <div class="card mb-4">
+            <div class="card-body">
+                <h4 id="service-display" class="card-title">Service: Loading...</h4>
+                <h5 id="provider-display" class="card-subtitle mb-2 text-muted">Provider: Loading...</h5>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-body">
+                <form id="booking-form" class="needs-validation" novalidate>
+                    <input type="hidden" id="service-type">
+                    
+                    <div class="row mb-3">
+                        <div class="col-md-6 mb-3 mb-md-0">
+                            <label for="booking-date" class="form-label">Date *</label>
+                            <input type="date" class="form-control" id="booking-date" required>
+                            <div class="invalid-feedback">Please select a date</div>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="booking-time" class="form-label">Time *</label>
+                            <select class="form-select" id="booking-time" required>
+                                <option value="" disabled selected>Select time</option>
+                                <option value="9:00 AM">9:00 AM</option>
+                                <option value="10:00 AM">10:00 AM</option>
+                                <option value="11:00 AM">11:00 AM</option>
+                                <option value="2:00 PM">2:00 PM</option>
+                                <option value="3:00 PM">3:00 PM</option>
+                                <option value="4:00 PM">4:00 PM</option>
+                            </select>
+                            <div class="invalid-feedback">Please select a time</div>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="customer-name" class="form-label">Your Name *</label>
+                        <input type="text" class="form-control" id="customer-name" required>
+                        <div class="invalid-feedback">Please enter your name</div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="customer-phone" class="form-label">Phone Number *</label>
+                        <input type="tel" class="form-control" id="customer-phone" required>
+                        <div class="invalid-feedback">Please enter a valid phone number</div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="customer-address" class="form-label">Service Address</label>
+                        <textarea class="form-control" id="customer-address" rows="2"></textarea>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="special-notes" class="form-label">Special Instructions</label>
+                        <textarea class="form-control" id="special-notes" rows="3" placeholder="Any special requirements..."></textarea>
+                    </div>
+
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                        <button type="button" class="btn btn-outline-secondary me-md-2" onclick="window.history.back()">
+                            Back
+                        </button>
+                        <button type="submit" class="btn btn-primary">
+                            Confirm Booking
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

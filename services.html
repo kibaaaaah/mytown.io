@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | MyTown</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body id="services-page">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">MyTown Services</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="navbar-nav ms-auto">
+                    <a class="nav-link" href="index.html">Home</a>
+                    <a class="nav-link active" href="services.html">Services</a>
+                    <a class="nav-link" href="provider.html">Become a Provider</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-5">
+        <h1 class="mb-4">Available Services</h1>
+        
+        <div class="row g-4">
+            <!-- Plumbing Service -->
+            <div class="col-md-4">
+                <div class="card service-card h-100" data-service-id="plumbing">
+                    <img src="https://placehold.co/600x400/003366/FFFFFF?text=Plumbing" 
+                         class="card-img-top" 
+                         alt="Plumbing Services">
+                    <div class="card-body">
+                        <h5 class="card-title">Plumbing Services</h5>
+                        <p class="card-text">John's Plumbing - 4.8 ★ (42 reviews)</p>
+                        <div class="d-flex justify-content-between">
+                            <a href="provider.html?service=plumbing" class="btn btn-primary">View Profile</a>
+                            <a href="booking.html?service=Plumbing&provider=John's Plumbing&type=plumbing" 
+                               class="btn btn-success">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Tutoring Service -->
+            <div class="col-md-4">
+                <div class="card service-card h-100" data-service-id="tutoring">
+                    <img src="https://placehold.co/600x400/660033/FFFFFF?text=Tutoring" 
+                         class="card-img-top" 
+                         alt="Tutoring Services">
+                    <div class="card-body">
+                        <h5 class="card-title">Math Tutoring</h5>
+                        <p class="card-text">Priya's Tutoring - 4.9 ★ (35 reviews)</p>
+                        <div class="d-flex justify-content-between">
+                            <a href="provider.html?service=tutoring" class="btn btn-primary">View Profile</a>
+                            <a href="booking.html?service=Math Tutoring&provider=Priya's Tutoring&type=tutoring" 
+                               class="btn btn-success">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Handyman Service -->
+            <div class="col-md-4">
+                <div class="card service-card h-100" data-service-id="handyman">
+                    <img src="https://placehold.co/600x400/336600/FFFFFF?text=Handyman" 
+                         class="card-img-top" 
+                         alt="Handyman Services">
+                    <div class="card-body">
+                        <h5 class="card-title">Handyman Services</h5>
+                        <p class="card-text">Rahul's Repairs - 4.7 ★ (28 reviews)</p>
+                        <div class="d-flex justify-content-between">
+                            <a href="provider.html?service=handyman" class="btn btn-primary">View Profile</a>
+                            <a href="booking.html?service=Handyman Services&provider=Rahul's Repairs&type=handyman" 
+                               class="btn btn-success">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
